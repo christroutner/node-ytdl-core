@@ -1,10 +1,17 @@
+/*
+  Customized for my own use.
+*/
+
+const YT_LINK = 'https://www.youtube.com/watch?v=aqz-KE-bpKQ'
+const OUTPUT_NAME = 'video.mp4'
+
 const readline = require('readline');
 const path = require('path');
 const fs = require('fs');
 const ytdl = require('..');
 
-const url = 'https://www.youtube.com/watch?v=aqz-KE-bpKQ';
-const output = path.resolve(__dirname, 'video.mp4');
+const url = YT_LINK;
+const output = path.resolve(__dirname, OUTPUT_NAME);
 
 const video = ytdl(url);
 let starttime;
